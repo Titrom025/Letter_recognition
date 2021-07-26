@@ -1,0 +1,7 @@
+# Ignore everything
+*
+
+!.gitignore
+!Act_pycharm/
+!Act_pycharm/actRecognition.ipynb
+
