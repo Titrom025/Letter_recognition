@@ -1,7 +1,10 @@
 # Ignore everything
-*
 
-!.gitignore
-!Act_pycharm/
-!Act_pycharm/actRecognition.ipynb
-
+letters/
+input/
+results/
+xmls/
+handled/
+letters.zip
+*checkpoints/
+.DS_Store
