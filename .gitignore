@@ -8,3 +8,8 @@ handled/
 letters.zip
 *checkpoints/
 .DS_Store
+*.jpg
+*.pdf
+*.xml
+*.pyc
+*.zip
