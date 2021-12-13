@@ -2,6 +2,7 @@ import re
 
 def extractNums(processedText):    
     actNumbers = re.findall(r"№ ?[^ /,\n][^ ,\n]+", processedText)
+    actNumbers = list(filter(lambda number: len(re.sub(r"[№ от]", r"", number)) > 0, actNumbers))
     return [[num] for num in actNumbers]
         
         
@@ -52,8 +53,6 @@ def extractPersons(processedText, markup):
       person = person.strip()
       person = re.sub(r"  +", r" ", person)
       personsArr.append(person.split(" "))
-        
-    print("\nPersons regex XXXX X.X. | X.X. XXXX:")
     
     for person in persons:     
       person = person.strip()
